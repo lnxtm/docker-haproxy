@@ -1,7 +1,5 @@
 FROM debian:jessie
 ###########################################################################
-MAINTAINER Alexander Shevchenko <kudato@me.com>
-###########################################################################
 RUN apt-get update && apt-get install -y libssl1.0.0 libpcre3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 ENV HAPROXY_MAJOR 1.5
